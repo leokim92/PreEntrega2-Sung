@@ -1,0 +1,289 @@
+/* Margins, paddings, and box-sizing for the website */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+/* FONT */
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto:wght@100&family=Satisfy&display=swap');
+ 
+/* header background adjustment */
+header {
+    background-color: #545555;
+    background-image: url(../img/takoyaki\ 3.c.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+/* navbar bs adjustment */
+nav li {
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+nav {
+    padding: 10;
+}
+
+.fuentes {
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.fuentes li a:hover {
+    background-color: #ffa51f;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.Slogan {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.Logo {
+    width: 300px;
+    text-align: center;
+}
+
+nav {
+    grid-column: 2 / 5;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+/* main info title */
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+.name0 {
+    margin-top: 10px;
+}
+
+.name4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.name5 {
+    margin-top: 10px;
+}
+
+.name6 {
+    margin-top: 10px;
+}
+
+.img2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} 
+
+.Text {
+    background-color: none;
+    border: none;
+    width: 450px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+  /* url videos sizing */
+.Video  {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.video-sizing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 560;
+    max-width: 100%;
+    height: 315px;
+}
+
+/* footer adjustment */
+.footer0 {
+    background-color: none;
+    margin-top: 100px;
+    border: none;
+    width: auto;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.footer1 {
+    font-size: 12px;
+    background-color: none;
+    border: none;
+    max-width: 100%;
+    width: 400px;
+    height: 45px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.all {
+    background-color: none;
+    border: none;
+    position: relative;
+}
+
+/* map ajustment */
+.Maps {
+    margin-left: 350px;
+}
+.Restaurant {
+    background-color: none;
+    border: none;
+    width: 600px;
+    height: 450px;
+    position: absolute;
+    top: 30px;
+    left: 1000px;
+}
+
+.location {
+    font-size: 20px;
+    margin-bottom: 50px;
+    display: flex;
+}
+.name {
+    margin-top: 50px;
+}
+
+/* tienda shopping cards adjustment */
+.container {
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.stacked {
+    display: grid;
+}
+
+.stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+
+.product-grid {
+    display:grid;
+    gap: .125rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.card {
+    aspect-ratio: 1 / 2.5;
+}
+.card__content{
+    background-color: white;
+    align-self: end;
+    margin: .5rem .5rem 2rem;
+    padding: .5rem;
+    box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1) ;
+}
+
+.card__title {
+    line-height: 1.1;
+    color: #ffa51f;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card__price {
+    font-size: 1.75rem;
+}
+.card__img {
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+}
+@media (min-width: 60em) {
+
+    .card__img{
+        aspect-ratio: 1 / 1;
+    }
+    .card.featured {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .card.featured .card__img {
+        aspect-ratio: 1 / 1.25;
+    }
+    .card.featured .card__title {
+        font-size: 1.75rem;
+    }
+}
+
+
+ /* form adjustment */
+.title-img-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.ramen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.name4 {
+    grid-column: 1 / 3;
+}
+
+.img-with-form {
+    display:flex;
+}
+
+.form {
+    margin-top: 50px;
+    padding: 20px;
+    grid-column: 2 / 3;
+    width: auto
+}
+
+.form-control {
+    width: 450px;
+}
+
+
+@media screen and (max-width: 480px) {
+   
+    .Slogan {
+        font-size: 1.5rem ;
+    }
+    
+}
